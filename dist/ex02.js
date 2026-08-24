@@ -1,8 +1,18 @@
 "use strict";
-// Create a generic function named `identity` that takes a single argument of type `T` and returns that argument.
-// Create a few test cases, such as using the function with numbers, strings, and custom objects to demonstrate its type flexibility.
 Object.defineProperty(exports, "__esModule", { value: true });
-const identify = () => {
-    // Code here
-};
+function identity(value) {
+    return value;
+}
+// Test with a number
+const numberResult = identity(25);
+console.log("Number:", numberResult);
+// Test with a string
+const stringResult = identity("Hello TypeScript");
+console.log("String:", stringResult);
+// Test with a custom object
+const personResult = identity({
+    name: "Sarai",
+    role: "Student",
+});
+console.log("Object:", personResult);
 //# sourceMappingURL=ex02.js.map

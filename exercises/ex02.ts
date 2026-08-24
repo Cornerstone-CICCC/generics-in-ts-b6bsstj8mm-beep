@@ -1,6 +1,19 @@
-// Create a generic function named `identity` that takes a single argument of type `T` and returns that argument.
-// Create a few test cases, such as using the function with numbers, strings, and custom objects to demonstrate its type flexibility.
+function identity<T>(value: T): T {
+  return value;
+}
 
-const identify = () => {
-  // Code here
-};
+// Test with a number
+const numberResult = identity<number>(25);
+console.log("Number:", numberResult);
+
+// Test with a string
+const stringResult = identity<string>("Hello TypeScript");
+console.log("String:", stringResult);
+
+// Test with a custom object
+const personResult = identity({
+  name: "Sarai",
+  role: "Student",
+});
+
+console.log("Object:", personResult);
