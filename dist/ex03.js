@@ -1,8 +1,17 @@
 "use strict";
-// Implement a generic function named `reverseArray` that takes an array of type `T[]` and reverses the order of elements in the same array.
-// Provide test cases using arrays of different types, including numbers, strings, and custom objects.
 Object.defineProperty(exports, "__esModule", { value: true });
-const reverseArray = () => {
-    // Code here
+const reverseArray = (array) => {
+    return array.reverse();
 };
+// Numbers
+const numbers = [1, 2, 3, 4, 5];
+console.log(reverseArray(numbers));
+// Strings
+const words = ["apple", "banana", "orange"];
+console.log(reverseArray(words));
+const people = [
+    { name: "Sarai", age: 25 },
+    { name: "Miu", age: 24 },
+];
+console.log(reverseArray(people));
 //# sourceMappingURL=ex03.js.map
